@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Segoe UI", cursive, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(189, 212, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: rgb(15, 32, 110);
+  width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.score-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  align-items: center;
+}
+
+.restart-quiz {
+  width: 30%;
+  background-color: rgb(53, 75, 100);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ffffff;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* QUESTION SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+/* ANSWERS SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #000000;
+  background-color: rgb(181, 194, 255);
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #374469;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background-color: #6f81d1;
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, .3);
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
