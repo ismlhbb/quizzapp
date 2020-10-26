@@ -108,3 +108,32 @@ button:focus {
 button svg {
   margin-right: 5px;
 }
+
+/* Responsive */
+@media(max-width: 990px) {
+  .app {
+    width: 350px;
+    min-height: 100px;
+    height: min-content;
+  }
+  .question-count span {
+    font-size: 24px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 550px) {
+  .app {
+    width: 300px;
+    min-height: 50px ;
+    height: min-content;
+  }
+  .question-count span {
+    font-size: 20px;
+  }
+  button {
+    font-size: 12px;
+  }
+}
