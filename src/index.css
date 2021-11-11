@@ -1,18 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Nunito", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  font-family: "Segoe UI", cursive, sans-serif;
-  color: #ffffff;
-}
-
-body {
   background-color: rgb(189, 212, 218);
   display: flex;
   justify-content: center;
@@ -20,9 +14,14 @@ body {
   min-height: 100vh;
 }
 
+* {
+  font-family: "Nunito", "Segoe UI", cursive, sans-serif;
+  color: #ffffff;
+}
+
 .app {
   background-color: rgb(15, 32, 110);
-  width: 450px;
+  width: 500px;
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
@@ -83,22 +82,22 @@ button {
   width: 100%;
   font-size: 16px;
   color: #000000;
-  background-color: rgb(181, 194, 255);
+  background-color: rgb(220, 227, 255);
   border-radius: 15px;
   display: flex;
-  padding: 5px;
+  padding: 9px;
   justify-content: center;
   align-items: center;
   border: 5px solid #374469;
   cursor: pointer;
-  margin-right: 5px;
-  transition: all .2s ease-in-out;
+  margin-right: 9px;
+  transition: all 0.2s ease-in-out;
 }
 
 button:active {
   background-color: #6f81d1;
   transform: translate3d(0, -5px, 0);
-  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.3);
 }
 
 button:focus {
@@ -110,7 +109,7 @@ button svg {
 }
 
 /* Responsive */
-@media(max-width: 990px) {
+@media (max-width: 990px) {
   .app {
     width: 350px;
     min-height: 100px;
@@ -124,10 +123,10 @@ button svg {
   }
 }
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .app {
     width: 300px;
-    min-height: 50px ;
+    min-height: 50px;
     height: min-content;
   }
   .question-count span {
